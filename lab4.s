@@ -6,12 +6,12 @@ sum_array:
     movl $0, %ecx           # Use %ecx as our loop index (i = 0)
 
     loop_start:
-        cmpl %esi, %ecx         # Compare index (i) with count (n)
+        cmpq %rsi, %rcx         # Compare index (i) with count (n)
         jge loop_end            # If i >= n, we are done!
 
         addl (%rdi, %rcx, 4), %eax 
 
-        incl %ecx               # i++
+        incq %rcx               # i++
         jmp loop_start          # Repeat
     loop_end:
         ret                     # Return to the C program
