@@ -1,4 +1,4 @@
 # Compile
-gcc lab.s lab.c -o lab4
+gcc lab4.s lab4.c -o lab4
 # Run
 ./lab4
