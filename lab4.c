@@ -15,9 +15,8 @@ int main() {
     int count;
     fscanf(file, "%d", &count); // Read the count from the first line
 
-    // SIMPLE WAY: Just declare a fixed array size
     // Make sure it's big enough for your data.txt
-    int numbers[100]; 
+    int numbers[count]; 
 
     // Fill the array
     for (int i = 0; i < count; i++) {
